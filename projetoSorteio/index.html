@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/galeria/imagens/ico.png" type="text/png">
+
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="title">Bem vindo ao Seu Sorteio</h1>
+        <p id="descricao">Clique no botão para começar a sortear. No primeiro campo, coloque o seu número, e no segundo,
+            o número limite do sorteio.
+        </p>
+        <input id="numeroUsuario" type="number" name="number" min="0" max="100" placeholder="Seu número" value="">
+        <input id="numeroPessoas" type="number" name="number" min="0" max="100" placeholder="N° de pessoas" value="100">
+        <button onclick="resultado()" id="button">Sortear</button>
+        <span style="display: none;" id="descAposApertar">Você pode apertar novamente para tentar concorrer
+            novamente!</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
